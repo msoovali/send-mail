@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Email form</h1>
+<form action="/send" method="post">
+    <input type="text" name="email" placeholder="Your email address">
+    <input type="text" name="subject" placeholder="Enter subject of mail">
+    <input type="text" name="content" placeholder="Content of email">
+    <button type="submit">Send email</button>
+</form>
+{% endblock %}
